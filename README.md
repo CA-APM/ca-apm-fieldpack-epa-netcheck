@@ -32,25 +32,27 @@ Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.
 
 # Plug-in Installation and Configuration
 
-1. Extract the plug-in to <epa_home>/epaplugins.
+1. Extract the plug-in to <*EPAgent_Home*>\epaplugins.
 2. Configure the IntroscopeEPAgent.properties file in <*EPAgent_Home*>.
-  1. Add a stateful plug-in entry for NMON LogReader.
-  1. Add stateless plug-in properties.
+
+   a. Add a stateful plug-in entry for NMON LogReader.
+   
+   b. Add stateless plug-in properties.
   
   For example:
 
 	introscope.epagent.plugins.stateless.names=NETCHECK (can be appended to a previous entry)
-	introscope.epagent.stateless.NETCHECK.command=perl <epa_home>/epaplugins/netcheck/netCheck.pl "<epa_home>/epaplugins/netcheck/datafile.txt"
+	introscope.epagent.stateless.NETCHECK.command=perl <*EPAgent_Home*>/epaplugins/netcheck/netCheck.pl <*EPAgent_Home*>/epaplugins/netcheck/datafile.txt"
     introscope.epagent.stateless.NETCHECK.delayInSeconds=900
   
 3. (Optional) Install modules Net::Ping and IO::Socket::INET if your PERL distribution does not have them.
 
 # Usage
 
-Start the EPAgent using the control script in the \<epa_home\>/bin directory.
+Start the EPAgent using the control script in the <*EPAgent_Home*>/bin directory.
 
 # Debug and Troubleshoot
-Update the root logger in \<epa_home\>/IntroscopeEPAgent.properties from INFO to DEBUG, then save. No managed appklication restart needed.
+Update the root logger in <*EPAgent_Home*>/IntroscopeEPAgent.properties from INFO to DEBUG, then save. No managed appklication restart needed.
 
 You can also manually execute the plug-in from a console and use the PERL built-in debugger.
 
