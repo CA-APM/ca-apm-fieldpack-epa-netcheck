@@ -34,8 +34,8 @@ Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.
 
 1. Extract the plug-in to <epa_home>/epaplugins.
 2. Configure the IntroscopeEPAgent.properties file in <*EPAgent_Home*>.
-	1. Add a stateful plug-in entry for NMON LogReader.
-	1. Add stateless plug-in properties.
+  1. Add a stateful plug-in entry for NMON LogReader.
+  1. Add stateless plug-in properties.
   
   For example:
 
