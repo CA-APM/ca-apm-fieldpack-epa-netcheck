@@ -2,7 +2,7 @@
 
 # Description
 
-This is an EPAgent plug-in that monitors server and port ping and socket connections.
+An EPAgent plug-in that monitors server and port ping and socket connections.
 
 The datafile.txt file is list of servers and ports to be tested (includes sample format in the header).
 
@@ -12,7 +12,7 @@ For installation instructions, see the README.md file.
 
 # Short Description
 
-This is an EPAgent plug-in that monitors server and port ping and socket connections.
+An EPAgent plug-in that monitors server and port ping and socket connections.
 
 # APM Version
 
@@ -23,31 +23,30 @@ Tested with CA APM 9.7.1 Enterprise Manager, EPAgent 9.7.1, and Perl 5.10+.
 Tested with CA APM 9.7.1 Enterprise Manager, EPAgent 9.7.1, and Perl 5.10+.
 
 # Licensing
-Apache License, version 2.0. See [Licensing](https://www.apache.org/licenses/LICENSE-2.0).
+Apache License, version 2.0. See [Licensing](https://www.apache.org/licenses/LICENSE-2.0)
 
 # Prerequisite
 An installed and configured EPAgent.
 
-Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.](https://docops.ca.com)
+Find the version 9.6 to 10.x documentation on [the CA APM documentation wiki.](https://docops.ca.com)
 
-# Plug-in Installation and Configuration
+# Install and Configure EPAgent Plug-in for Simple Network and Server Health Check
 
 1. Extract the plug-in to <*EPAgent_Home*>\epaplugins.
 2. Configure the IntroscopeEPAgent.properties file in <*EPAgent_Home*>.
-
    a. Add a stateful plug-in entry for NMON LogReader.
    
    b. Add stateless plug-in properties.
   
   For example:
-
+```
 	introscope.epagent.plugins.stateless.names=NETCHECK (can be appended to a previous entry)
 	introscope.epagent.stateless.NETCHECK.command=perl <*EPAgent_Home*>/epaplugins/netcheck/netCheck.pl <*EPAgent_Home*>/epaplugins/netcheck/datafile.txt"
     introscope.epagent.stateless.NETCHECK.delayInSeconds=900
-  
+```
 3. (Optional) Install modules Net::Ping and IO::Socket::INET if your PERL distribution does not have them.
 
-# Usage
+# Use EPAgent Plug-in for Simple Network and Server Health Check
 
 Start the EPAgent using the control script in the <*EPAgent_Home*>/bin directory.
 
