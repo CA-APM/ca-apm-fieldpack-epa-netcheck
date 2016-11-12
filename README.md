@@ -4,7 +4,8 @@
 
 This is an EPAgent plug-in that monitors server and port ping and socket connections.
 
-The datafile.txt file is list of servers and ports to be tested (includes sample format in the header)
+The datafile.txt file is list of servers and ports to be tested (includes sample format in the header).
+
 The netCheck.pl file is the main PERL program.
 
 For installation instructions, see the README.md file.
@@ -26,14 +27,15 @@ Apache License, version 2.0. See [Licensing](https://www.apache.org/licenses/LIC
 
 # Prerequisite
 An installed and configured EPAgent.
-Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com](https://docops.ca.com/display/APMDEVOPS).
+
+Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.](https://docops.ca.com)
 
 # Plug-in Installation and Configuration
 
 1. Extract the plug-in to <epa_home>/epaplugins.
 2. Configure the IntroscopeEPAgent.properties file in <*EPAgent_Home*>.
-  a. Add a stateful plug-in entry for NMON LogReader.
-  b. Add stateless plug-in properties.
+	1. Add a stateful plug-in entry for NMON LogReader.
+	1. Add stateless plug-in properties.
   
   For example:
 
@@ -49,6 +51,7 @@ Start the EPAgent using the control script in the \<epa_home\>/bin directory.
 
 # Debug and Troubleshoot
 Update the root logger in \<epa_home\>/IntroscopeEPAgent.properties from INFO to DEBUG, then save. No managed appklication restart needed.
+
 You can also manually execute the plug-in from a console and use the PERL built-in debugger.
 
 # Support
