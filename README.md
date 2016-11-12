@@ -25,10 +25,10 @@ Tested with CA APM 9.7.1 Enterprise Manager, EPAgent 9.7.1, and Perl 5.10+.
 Apache License, version 2.0. See [Licensing](https://www.apache.org/licenses/LICENSE-2.0).
 
 # Prerequisite
-An installed EPAgent.
+An installed and configured EPAgent.
 Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com](https://docops.ca.com/display/APMDEVOPS).
 
-# Plug-in Installation
+# Plug-in Installation and Configuration
 
 1. Extract the plug-in to <epa_home>/epaplugins.
 2. Configure the IntroscopeEPAgent.properties file in <*EPAgent_Home*>.
